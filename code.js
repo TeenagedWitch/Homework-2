@@ -1,6 +1,5 @@
 // Task 1.
 function makeObjectDeepCopy(obj) {
-  console.log(obj);
   if (obj === null || typeof obj !== "object") {
     return obj;
   }
@@ -15,23 +14,6 @@ function makeObjectDeepCopy(obj) {
 
   return copy;
 }
-
-const obj1 = {
-  name: "Serega",
-  passposrt: {
-    first: "Georgia",
-    second: "Russia",
-  },
-};
-
-console.log(makeObjectDeepCopy(obj1));
-
-const test1 = [
-  { a: 1, b: { c: 2 } },
-  { d: 3, e: [4, 5] },
-];
-
-console.log(makeObjectDeepCopy(test1));
 
 // // Task 2.
 
@@ -70,11 +52,6 @@ const selectFromInterval = (arr, num1, num2) => {
   return filteredArr.sort((a, b) => a - b);
 };
 
-console.log(selectFromIntervall([1, 3, 5], 5, 2));
-console.log(selectFromIntervall([-2, -15, 0, 4], -13, -5));
-
-console.log(selectFromIntervall(["aaa"], 2, 3));
-
 // Task 3.
 const myIterable = {
   from: 1,
@@ -102,11 +79,3 @@ const myIterable = {
     };
   },
 };
-
-try {
-  for (let item of myIterable) {
-    console.log(item);
-  }
-} catch (error) {
-  console.error(error);
-}
