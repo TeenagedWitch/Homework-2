@@ -33,9 +33,9 @@ const test1 = [
 
 console.log(makeObjectDeepCopy(test1));
 
-// Task 2.
+// // Task 2.
 
-const selectFromIntervall = (arr, num1, num2) => {
+const selectFromInterval = (arr, num1, num2) => {
   if (
     !Array.isArray(arr) ||
     typeof num1 !== "number" ||
